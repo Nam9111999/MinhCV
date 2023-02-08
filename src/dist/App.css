@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  font-family: "Cinzel", serif;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.flex-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.app .nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 50px;
+  min-height: 100px;
+}
+.app .nav .right {
+  display: flex;
+  gap: 20px;
+}
+.app .nav .right .nav--box {
+  transition: all 0.3s;
+  color: #999;
+}
+.app .nav .right .nav--box:hover {
+  color: #000;
+}
+.app .nav .right .nav--box.active {
+  color: #000;
+}
+.app .section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+}
+.app .social {
+  display: flex;
+  gap: 15px;
+  font-size: 1.2rem;
+  margin: 80px 0;
+  color: #999;
+}
+.app .social .icon:hover {
+  color: #000;
+}
+.app .copy-right {
+  color: #999;
+  text-align: center;
+  margin-bottom: 30px;
+}
