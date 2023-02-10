@@ -1,22 +1,48 @@
 import './App.scss';
-import { NavLink, Outlet } from 'react-router-dom';
+import { matchPath, NavLink, Outlet } from 'react-router-dom';
 import {
   BsFacebook,
   BsInstagram,
   BsLinkedin,
 } from "react-icons/bs";
 import { SiGmail } from "react-icons/si";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useLayoutEffect, useRef } from 'react';
+
+
+gsap.registerPlugin(ScrollTrigger);
+
 
 function App() {
+
+  const nav = useRef(null)
+
+  useLayoutEffect(() => {
+      gsap.fromTo(".nav",{
+        background:"transparent",
+        color:"#fff",
+      }, {
+          background:"#fff",
+          color:"#000",
+          scrollTrigger:{
+          trigger: ".nav",
+              start: "top top",
+              end: "bottom center-=350",
+              scrub: 2
+          }
+        });
+      })
+
   return (
     <div className='app'>
 
-       <div className="nav">
+       <div className="nav" ref={nav}>
         <div className="left">
           <h1 className="name--title">Rusto Ramous</h1>
           <div className="role">design • marketing • photography</div>
         </div>
-        <div className="right">
+        {/* <div className="right">
           <NavLink
             to="/info/main"
             className={({ isActive }) =>
@@ -49,7 +75,7 @@ function App() {
           >
             about me
           </NavLink>
-        </div>
+        </div> */}
       </div>
 
         <Outlet />

@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 * {
   margin: 0;
-  font-family: "Cinzel", serif;
+  font-family: "Montserrat", serif;
   padding: 0;
   box-sizing: border-box;
 }
@@ -11,12 +11,14 @@ html {
   width: 100%;
   min-height: 100vh;
   scroll-behavior: smooth;
+  box-sizing: border-box;
 }
 
 body {
   position: relative;
   width: 100%;
   min-height: 100vh;
+  background-color: #000;
 }
 
 #root {
@@ -37,10 +39,16 @@ a {
 }
 
 .app .nav {
+  background: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 0 50px;
+  padding: 0 50px;
   min-height: 100px;
 }
 .app .nav .right {
@@ -74,7 +82,7 @@ a {
   color: #000;
 }
 .app .copy-right {
-  color: #999;
+  color: #fff;
   text-align: center;
   margin-bottom: 30px;
 }
