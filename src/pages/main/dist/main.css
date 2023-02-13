@@ -2,6 +2,8 @@
   position: relative;
   margin-top: 100px;
   overflow: hidden;
+  background: #fff;
+  color: #000;
 }
 .main .hero {
   background: #000;
@@ -73,6 +75,63 @@
 .main .hero .block:nth-child(19) {
   grid-area: 5/9/9/11;
 }
+.main .grid {
+  padding: 0 20px;
+  width: 100%;
+  height: 300vh;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+}
+.main .grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.main .grid .div1 {
+  grid-area: 1/1/3/3;
+}
+.main .grid .div2 {
+  grid-area: 1/3/3/5;
+}
+.main .grid .div3 {
+  grid-area: 1/5/3/7;
+}
+.main .grid .div4 {
+  grid-area: 3/1/5/3;
+}
+.main .grid .div5 {
+  grid-area: 3/3/5/5;
+}
+.main .grid .div6 {
+  grid-area: 3/5/5/7;
+}
+.main .grid .div7 {
+  grid-area: 5/1/9/3;
+}
+.main .grid .div8 {
+  grid-area: 5/3/9/5;
+}
+.main .grid .div9 {
+  grid-area: 5/5/9/7;
+}
+.main .video, .main .video2 {
+  width: 100%;
+  padding-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .video2 {
+  padding-top: 30px;
+  padding-bottom: 0;
+}
+.main .video2 video {
+  padding: 5px;
+}
 .main .section {
   display: flex;
   justify-content: center;
@@ -81,9 +140,9 @@
 }
 .main .project {
   display: flex;
-  color: #fff;
-  padding: 150px 100px;
+  padding: 0 100px;
   position: relative;
+  margin-bottom: 100px;
 }
 .main .project .info {
   width: 50%;
@@ -105,6 +164,11 @@
   font-weight: 600;
   border-radius: 50px;
   border: none;
+  transition: all 0.5s;
+}
+.main .project .info .btn:hover {
+  background: #000;
+  color: #fff;
 }
 .main .project .info .btn .icon {
   padding-left: 10px;

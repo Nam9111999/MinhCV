@@ -39,8 +39,8 @@ function App() {
 
        <div className="nav" ref={nav}>
         <div className="left">
-          <h1 className="name--title">Rusto Ramous</h1>
-          <div className="role">design • marketing • photography</div>
+          <h1 className="name--title">NGUYEN NHAT MINH</h1>
+          <div className="role">Design • Marketing • Photography</div>
         </div>
         {/* <div className="right">
           <NavLink

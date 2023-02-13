@@ -19,7 +19,8 @@
   position: absolute;
   left: 0;
   top: 0;
-  background-image: url("https://images.pexels.com/photos/7595904/pexels-photo-7595904.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+  background-image: url("https://images.pexels.com/photos/397998/pexels-photo-397998.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+  opacity: 0.6;
   background-repeat: no-repeat;
   background-position: 50% 0;
   background-size: cover;
