@@ -37,7 +37,6 @@ const Main = () => {
         trigger: ".info",
         start: "top-=100 center+=200",
         end: "top top",
-        markers: true,
         scrub: true,
       },
     });
@@ -55,7 +54,6 @@ const Main = () => {
         trigger: ".project--img",
         start: "top-=100 center+=200",
         end: "bottom top",
-        markers: true,
         scrub: true,
       },
     });
