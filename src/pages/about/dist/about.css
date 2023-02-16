@@ -7,6 +7,7 @@
   flex-direction: column;
   min-height: 400px;
   padding: 0 300px;
+  color: #fff;
 }
 .about .title {
   font-weight: 700;
@@ -20,7 +21,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 50px 0;
+  padding: 20px 0;
 }
 .about .btn {
   padding: 15px 30px;
@@ -30,8 +31,7 @@
   font-weight: 600;
 }
 .about .btn.btn--download {
-  background: #000;
-  color: #fff;
+  background: #fff;
 }
 .about .btn.btn--download:hover {
   transition: all 0.2s;

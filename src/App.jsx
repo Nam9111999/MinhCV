@@ -1,5 +1,5 @@
 import './App.scss';
-import { matchPath, NavLink, Outlet } from 'react-router-dom';
+import { Outlet, useNavigate } from 'react-router-dom';
 import {
   BsFacebook,
   BsInstagram,
@@ -8,7 +8,7 @@ import {
 import { SiGmail } from "react-icons/si";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useLayoutEffect, useRef } from 'react';
+import {  useRef } from 'react';
 
 
 gsap.registerPlugin(ScrollTrigger);
@@ -18,30 +18,35 @@ function App() {
 
   const nav = useRef(null)
 
-  useLayoutEffect(() => {
-      gsap.fromTo(".nav",{
-        background:"transparent",
-        color:"#fff",
-      }, {
-          background:"#fff",
-          color:"#000",
-          scrollTrigger:{
-          trigger: ".nav",
-              start: "top top",
-              end: "bottom center-=350",
-              scrub: 2
-          }
-        });
-      })
+  const navigate = useNavigate()
+  // useLayoutEffect(() => {
+  //     gsap.fromTo(".nav",{
+  //       background:"transparent",
+  //       color:"#fff",
+  //     }, {
+  //         background:"#fff",
+  //         color:"#000",
+  //         scrollTrigger:{
+  //         trigger: ".nav",
+  //             start: "top top",
+  //             end: "bottom center-=350",
+  //             scrub: 2
+  //         }
+  //       });
+  //     })
 
   return (
     <div className='app'>
 
        <div className="nav" ref={nav}>
         <div className="left">
-          <h1 className="name--title">NGUYEN NHAT MINH</h1>
-          <div className="role">Design • Marketing • Photography</div>
+        <img src="https://ik.imagekit.io/afysx8dz3/img/mid_logo_NGANG.png?ik-sdk-version=javascript-1.4.3&updatedAt=1676561176291" alt="" />
         </div>
+        <div className="nav--box">
+        <div className="nav--items" onClick={()=> {navigate("/info/main")}}>Projects</div>
+        <div className="nav--items" onClick={()=> {navigate("/info/project",{state:{project:"3d"}})}}>3D Renders</div>
+        <div className="nav--items" onClick={()=> {navigate("/info/about")}}>CV</div>
+      </div>
         {/* <div className="right">
           <NavLink
             to="/info/main"
@@ -76,14 +81,15 @@ function App() {
             about me
           </NavLink>
         </div> */}
+        
       </div>
 
         <Outlet />
       <div className=" section social">
-          <BsFacebook className="icon"/>
-          <BsInstagram className="icon"/>
-          <BsLinkedin className="icon"/>
-          <SiGmail className="icon"/>
+         <a href="https://www.facebook.com/minhindustrialdesign"> <BsFacebook className="icon"/></a>
+         <a href="https://www.instagram.com/boi_renaissance/"><BsInstagram className="icon"/></a>
+         <a href='https://www.linkedin.com/in/nguyenhmink/'> <BsLinkedin className="icon"/></a>
+          <a href="mailto: minhindustrialdesign@gmail.com"><SiGmail className="icon"/></a>
         </div>
         <div className="copy-right">Copyright © 2020 Nam Nguyen. All rights reserved.
 </div>

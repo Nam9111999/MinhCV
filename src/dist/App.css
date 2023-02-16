@@ -39,31 +39,38 @@ a {
 }
 
 .app .nav {
-  background: transparent;
-  position: fixed;
+  background: #fff;
   top: 0;
   left: 0;
   right: 0;
   z-index: 1;
   display: flex;
-  align-items: center;
+  flex-direction: row;
   justify-content: space-between;
   padding: 0 50px;
-  min-height: 100px;
+  height: 100px;
 }
-.app .nav .right {
+.app .nav .left {
   display: flex;
-  gap: 20px;
+  justify-content: center;
+  align-items: center;
 }
-.app .nav .right .nav--box {
-  transition: all 0.3s;
-  color: #999;
+.app .nav .left img {
+  height: 80px;
 }
-.app .nav .right .nav--box:hover {
-  color: #000;
+.app .nav .nav--box {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  position: relative;
 }
-.app .nav .right .nav--box.active {
-  color: #000;
+.app .nav .nav--box .nav--items {
+  padding: 20px 30px;
+  cursor: pointer;
 }
 .app .section {
   display: flex;
@@ -78,8 +85,11 @@ a {
   margin: 80px 0;
   color: #999;
 }
+.app .social a {
+  color: #999;
+}
 .app .social .icon:hover {
-  color: #000;
+  color: #fff;
 }
 .app .copy-right {
   color: #fff;

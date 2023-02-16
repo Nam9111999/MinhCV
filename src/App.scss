@@ -40,31 +40,38 @@ a {
 
 .app {
   .nav {
-    background: transparent;
-    position: fixed;
+    background: #fff;
     top: 0;
     left: 0;
     right: 0;
     z-index: 1;
     display: flex;
-    align-items: center;
+    // align-items: center;
+    flex-direction: row;
     justify-content: space-between;
     padding: 0 50px;
-    min-height: 100px;
-    .right {
+    height: 100px;
+    .left {
+      // width: 100%;
       display: flex;
-      gap: 20px;
-      .nav--box {
-        // color: #c0c1c0;
-        
-          transition: all .3s;
-          color: #999;
-          &:hover {
-            color: #000;
-          }
-        &.active  {
-          color: #000;
-        }
+      justify-content: center;
+      align-items: center;
+      img {
+        height: 80px;
+      }
+    }
+    .nav--box {
+      width: 40%;
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      font-size: 1.2rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      position: relative;
+      .nav--items {
+        padding: 20px 30px;
+        cursor: pointer;
       }
     }
   }
@@ -81,8 +88,11 @@ a {
     font-size: 1.2rem;
     margin: 80px 0;
     color: #999;
+    a{
+      color: #999;
+    }
     .icon:hover {
-      color: #000;
+      color: #fff;
     }
   }
   

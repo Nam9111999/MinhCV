@@ -254,13 +254,15 @@ const Main = () => {
           height="100%"
         />
       </div>
+      
       <div className="grid">
         <div className="div1">
           {/* <img src="https://res.cloudinary.com/dfqnnkzvr/image/upload/v1676019156/Lecol_3x_egqxyt.png" alt="" /> */}
           <SliderCard
             key="0"
+            project="lecol"
             imgUrl={[
-              "https://res.cloudinary.com/dfqnnkzvr/image/upload/v1676019156/Lecol_3x_egqxyt.png",
+              "https://ik.imagekit.io/afysx8dz3/img/Bolt/New_thumbnail/LECOL_9x16_00000.png?ik-sdk-version=javascript-1.4.3&updatedAt=1676557399718",
               "https://ik.imagekit.io/afysx8dz3/img/Lecol/Stories_Image_4_023.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1676018906800",
               "https://ik.imagekit.io/afysx8dz3/img/Lecol/Wiggins_AW22_Insta_Story_018.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1676018887363",
               "https://ik.imagekit.io/afysx8dz3/img/Lecol/C1_EN_FB-IG_s9x16_15s_017514_R0_HERO.mp4?ik-sdk-version=javascript-1.4.3&updatedAt=1676018911213",
@@ -270,62 +272,74 @@ const Main = () => {
         <div className="div2">
           <SliderCard
             key="1"
+            project="volkswagen"
             imgUrl={[
-              "https://res.cloudinary.com/dfqnnkzvr/image/upload/v1676019158/Volkwagen_3x_q6syei.png",
+              "https://ik.imagekit.io/afysx8dz3/img/Bolt/New_thumbnail/Volk-01.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1676557398843",
               "https://res.cloudinary.com/dfqnnkzvr/video/upload/v1676019199/C2_ES_FB-IG_r9x16_15s_014366_R0_HERO_b7sicp.mp4",
-              "https://res.cloudinary.com/dfqnnkzvr/image/upload/v1676019158/Volkwagen_3x_q6syei.png",
+              "https://ik.imagekit.io/afysx8dz3/img/Bolt/New_thumbnail/Volk-01.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1676557398843",
               "https://ik.imagekit.io/afysx8dz3/img/Volkwagen/C1_ES_FB-IG_r9x16_15s_014366_R2_HERO.mp4?ik-sdk-version=javascript-1.4.3&updatedAt=1676018935421",
             ]}
           />
         </div>
         <div className="div3">
           <SliderCard
-            key="1"
+            key="2"
+            project="bolt"
             imgUrl={[
-              "https://res.cloudinary.com/dfqnnkzvr/image/upload/v1676019157/Bolt_3x_cd4rxl.png",
+              "https://ik.imagekit.io/afysx8dz3/img/Bolt/New_thumbnail/Bolt_9x16.png?ik-sdk-version=javascript-1.4.3&updatedAt=1676557398881",
               "https://ik.imagekit.io/afysx8dz3/img/Bolt/C4_EN_TT_9x16_15s_018794_R0_HERO.mp4?ik-sdk-version=javascript-1.4.3&updatedAt=1676018926418",
-              "https://res.cloudinary.com/dfqnnkzvr/image/upload/v1676019157/Bolt_3x_cd4rxl.png",
+              "https://ik.imagekit.io/afysx8dz3/img/Bolt/New_thumbnail/Bolt_9x16.png?ik-sdk-version=javascript-1.4.3&updatedAt=1676557398881",
               "https://ik.imagekit.io/afysx8dz3/img/Bolt/C5_EN_TT_9x16_15s_018794_R0_HERO.mp4?ik-sdk-version=javascript-1.4.3&updatedAt=1676018927902",
             ]}
           />
         </div>
         <div className="div4">
           <img
-            src="https://res.cloudinary.com/dfqnnkzvr/image/upload/v1676019134/Durex_00000_zdrygy.png"
+            onClick={()=>{
+              navigate("/info/project",{state:{project:"durex"}})
+            }}
+            src="https://ik.imagekit.io/afysx8dz3/img/Bolt/New_thumbnail/Durex_00000.png?ik-sdk-version=javascript-1.4.3&updatedAt=1676557399579"
             alt=""
           />
         </div>
         <div className="div5">
           <img
-            src="https://res.cloudinary.com/dfqnnkzvr/image/upload/v1676019158/Viettel_3x_tacprn.png"
+            onClick={()=>{
+              navigate("/info/project",{state:{project:"viettel"}})
+            }}
+            src="https://ik.imagekit.io/afysx8dz3/img/Bolt/New_thumbnail/Viettel_9x16.png?ik-sdk-version=javascript-1.4.3&updatedAt=1676557398724"
             alt=""
           />
         </div>
         <div className="div6">
-          <SliderCard
-            key="1"
-            imgUrl={[
-              "https://res.cloudinary.com/dfqnnkzvr/image/upload/v1676019156/Envoy_helmet_3x_qgo4ke.png",
-              "https://res.cloudinary.com/dfqnnkzvr/image/upload/v1676019188/2_a7l8mp.jpg",
-              "https://res.cloudinary.com/dfqnnkzvr/image/upload/v1676019190/6_fvwuzq.jpg",
-              "https://res.cloudinary.com/dfqnnkzvr/image/upload/v1676019162/4_xuwvmm.jpg",
-            ]}
+        <img
+        src="https://ik.imagekit.io/afysx8dz3/img/Bolt/New_thumbnail/Asket_00017.png?ik-sdk-version=javascript-1.4.3&updatedAt=1676557399072"
+            alt=""
           />
         </div>
         <div className="div7">
           <img
+           onClick={()=>{
+            navigate("/info/project",{state:{project:"survival"}})
+          }}
             src="https://res.cloudinary.com/dfqnnkzvr/image/upload/v1676019154/Extrovert_3x_ktb4ak.png"
             alt=""
           />
         </div>
         <div className="div8">
           <img
+          onClick={()=>{
+            navigate("/info/project",{state:{project:"explorer"}})
+          }}
             src="https://res.cloudinary.com/dfqnnkzvr/image/upload/v1676019154/Explorer_3x_y0sdil.png"
             alt=""
           />
         </div>
         <div className="div9">
           <img
+           onClick={()=>{
+             navigate("/info/project",{state:{project:"mimosa"}})
+           }}
             src="https://res.cloudinary.com/dfqnnkzvr/image/upload/v1676019158/Mimosa_3x_buhcgs.png"
             alt=""
           />
@@ -342,7 +356,7 @@ const Main = () => {
           height="100%"
           controls
         />
-         <ReactPlayer
+        <ReactPlayer
           url={
             "https://res.cloudinary.com/dfqnnkzvr/video/upload/v1676019147/C1_EN_FB-IG_s9x16_15s_015861_R2_HERO_cotatm.mp4"
           }
@@ -352,7 +366,7 @@ const Main = () => {
           height="100%"
           controls
         />
-         <ReactPlayer
+        <ReactPlayer
           url={
             "https://res.cloudinary.com/dfqnnkzvr/video/upload/v1676019186/C2_EN_FB-IG_s9x16_15s_017514_R0_HERO_dpu6zs.mp4"
           }
@@ -362,7 +376,7 @@ const Main = () => {
           height="100%"
           controls
         />
-         <ReactPlayer
+        <ReactPlayer
           url={
             "https://res.cloudinary.com/dfqnnkzvr/video/upload/v1676019199/C2_ES_FB-IG_r9x16_15s_014366_R0_HERO_b7sicp.mp4"
           }
@@ -373,11 +387,13 @@ const Main = () => {
           controls
         />
       </div>
-      <div className="project">
+      {/* <div className="project">
         <div className="info left">
           <h2 className="title">LECOL UK</h2>
           <p>
-          While working as a motion designer at Shuttlerock, I got assigned to do a promotional video for LECOL UK, a Premium Performance cycling clothing brand based in UK. 
+            While working as a motion designer at Shuttlerock, I got assigned to
+            do a promotional video for LECOL UK, a Premium Performance cycling
+            clothing brand based in UK.
           </p>
           <button onClick={() => navigate("/project")} className="btn">
             Get more info <FaArrowAltCircleRight className="icon" />
@@ -404,7 +420,9 @@ const Main = () => {
         <div className="info right">
           <h2 className="title">Volkswagen Spain</h2>
           <p>
-          Working with Volkswagen Spain was an exciting opportunity for me as I was tasked to create 2 video for their their new Volkswagen Taigo campaign
+            Working with Volkswagen Spain was an exciting opportunity for me as
+            I was tasked to create 2 video for their their new Volkswagen Taigo
+            campaign
           </p>
           <button onClick={() => navigate("/project")} className="btn">
             Get more info <FaArrowAltCircleRight className="icon" />
@@ -416,8 +434,12 @@ const Main = () => {
         <div className="info left">
           <h2 className="title">Bolt</h2>
           <p>
-          Collaborating with Bolt was a great experience. Their brand exudes a youthful and energetic vibe, and even though this campaign was for the TikTok platform, they remained open to new and innovative idea
-I was assigned to produce two videos for them, one with a more modest and clean editing style, reminiscent of TikTok's native aesthetic.           </p>
+            Collaborating with Bolt was a great experience. Their brand exudes a
+            youthful and energetic vibe, and even though this campaign was for
+            the TikTok platform, they remained open to new and innovative idea I
+            was assigned to produce two videos for them, one with a more modest
+            and clean editing style, reminiscent of TikTok's native aesthetic.{" "}
+          </p>
           <button onClick={() => navigate("/project")} className="btn">
             Get more info <FaArrowAltCircleRight className="icon" />
           </button>
@@ -443,7 +465,14 @@ I was assigned to produce two videos for them, one with a more modest and clean 
         <div className="info right">
           <h2 className="title">Durex</h2>
           <p>
-          Working with Durex was a great experience. They have a bold and impactful brand, defined by striking graphics and imagery. The process of creating their video was a bit challenging, as we had to decipher their exact vision. However, despite these difficulties, the final result was highly successful. And I learn a lot about working with a big brand that paid a lot of attention about its image branding.          </p>
+            Working with Durex was a great experience. They have a bold and
+            impactful brand, defined by striking graphics and imagery. The
+            process of creating their video was a bit challenging, as we had to
+            decipher their exact vision. However, despite these difficulties,
+            the final result was highly successful. And I learn a lot about
+            working with a big brand that paid a lot of attention about its
+            image branding.{" "}
+          </p>
           <button onClick={() => navigate("/project")} className="btn">
             Get more info <FaArrowAltCircleRight className="icon" />
           </button>
@@ -454,7 +483,11 @@ I was assigned to produce two videos for them, one with a more modest and clean 
         <div className="info left">
           <h2 className="title">Viettel</h2>
           <p>
-          One of my proudest moments in Shuttlerock is when I was assigned to do a video for one of our subscriptions Viettel. Viettel is one of the largest telecom company in Vietnam, get to do a video for a big Vietnamese company was a dream come true           </p>
+            One of my proudest moments in Shuttlerock is when I was assigned to
+            do a video for one of our subscriptions Viettel. Viettel is one of
+            the largest telecom company in Vietnam, get to do a video for a big
+            Vietnamese company was a dream come true{" "}
+          </p>
           <button onClick={() => navigate("/project")} className="btn">
             Get more info <FaArrowAltCircleRight className="icon" />
           </button>
@@ -462,7 +495,7 @@ I was assigned to produce two videos for them, one with a more modest and clean 
         <div className="project--img right">
           <img
             src={
-              "https://res.cloudinary.com/dhttps://res.cloudinary.com/dfqnnkzvr/image/upload/v1676019158/Viettel_3x_tacprn.pngfqnnkzvr/image/upload/v1676019156/Lecol_3x_egqxyt.png"
+              "https://res.cloudinary.com/dfqnnkzvr/image/upload/v1676019158/Viettel_3x_tacprn.png"
             }
             alt=""
           />
@@ -480,7 +513,10 @@ I was assigned to produce two videos for them, one with a more modest and clean 
         <div className="info right">
           <h2 className="title">Yanko X Keyshot</h2>
           <p>
-          This project was my entry for redesign, and re-render a bicycle helmet, with the goal to make the existing helmet safer, more convenient, and more aesthetically pleasing.          </p>
+            This project was my entry for redesign, and re-render a bicycle
+            helmet, with the goal to make the existing helmet safer, more
+            convenient, and more aesthetically pleasing.{" "}
+          </p>
           <button onClick={() => navigate("/project")} className="btn">
             Get more info <FaArrowAltCircleRight className="icon" />
           </button>
@@ -491,7 +527,12 @@ I was assigned to produce two videos for them, one with a more modest and clean 
         <div className="info left">
           <h2 className="title">The MIMOSA</h2>
           <p>
-          The mimosa lamp was a lighting project at my university. To me, the Mimosa project is more than just a lamp. It's about inspiring the shy and introverted to open up and connect with the world. I believe that when you let your true self shine, you'll radiate a brighter light than ever before. The project also got 9/10 from my teachers in Univerisity
+            The mimosa lamp was a lighting project at my university. To me, the
+            Mimosa project is more than just a lamp. It's about inspiring the
+            shy and introverted to open up and connect with the world. I believe
+            that when you let your true self shine, you'll radiate a brighter
+            light than ever before. The project also got 9/10 from my teachers
+            in Univerisity
           </p>
           <button onClick={() => navigate("/project")} className="btn">
             Get more info <FaArrowAltCircleRight className="icon" />
@@ -518,19 +559,19 @@ I was assigned to produce two videos for them, one with a more modest and clean 
         <div className="info right">
           <h2 className="title">EXTROVERT survival kit</h2>
           <p>
-          This project is my graduation project when I was studying industrial design at the university of architecture in Ho Chi Minh City, Viet Nam. To this day, this is still one of my proudest projects, as I was a runner-up student for my year. The project got 8.7/10 from my graduation board. The product is a navigation + survival kit for the group.</p>
+            This project is my graduation project when I was studying industrial
+            design at the university of architecture in Ho Chi Minh City, Viet
+            Nam. To this day, this is still one of my proudest projects, as I
+            was a runner-up student for my year. The project got 8.7/10 from my
+            graduation board. The product is a navigation + survival kit for the
+            group.
+          </p>
           <button onClick={() => navigate("/project")} className="btn">
             Get more info <FaArrowAltCircleRight className="icon" />
           </button>
         </div>
-      </div>
-
+      </div> */}
     </div>
-
-
-
-
-    
   );
 };
 
